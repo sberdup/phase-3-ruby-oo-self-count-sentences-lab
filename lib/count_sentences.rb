@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     #binding.pry
-    self.split(/[?!.]/).filter{|sentence| sentence != ''}.count
+    self.split(/[?!.]/).count{|sentence| sentence != ''}
   end
 end
